@@ -1,17 +1,3 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
-
 // Form submission
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -26,3 +12,14 @@ document.querySelector(".cta-button").addEventListener("click", function () {
     block: "start",
   });
 });
+
+//lightbox//
+
+type = "text/javascript";
+var lightbox = new PhotoSwipeLightbox({
+  gallery: ".portfolio-section",
+  children: "a",
+  // dynamic import is not supported in UMD version
+  pswpModule: PhotoSwipe,
+});
+lightbox.init();
