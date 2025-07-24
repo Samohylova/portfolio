@@ -514,6 +514,9 @@ nav {
 .form-group input {
   padding: 12px;
   font-size: medium;
+  border-radius: 0.3rem;
+  border-color: #ffffff;
+  box-shadow: none;
 }
 
 .form-group textarea {
