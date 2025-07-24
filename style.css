@@ -285,6 +285,7 @@ nav {
 
 /* Hero Section */
 .hero {
+  background-image: url ("pozadi_linka.svg");
   background: var(--bg-color);
   padding: var(--spacing-xxxl) 0;
   text-align: center;
@@ -342,6 +343,7 @@ nav {
   width: 100%;
   height: 1075px;
   margin-bottom: var(--spacing-xxl);
+  border-radius: var(--border-xlarge);
 }
 
 .portfolio-item:hover {
@@ -405,22 +407,19 @@ nav {
 }
 
 .about-image img {
-  width: 113%;
-  height: 113%;
-  max-width: 700px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 23px;
-  border-bottom-left-radius: 0;
-  margin: calc(-0.3 * var(--spacing-xxl)) calc(2 * var(--spacing-xxl))
-    calc(-1.7 * var(--spacing-xxl)) calc(-0.3 * var(--spacing-xxl)); /* top/bottom/left/right */
+  width: 130%;
+  height: 130%;
+  max-width: 800px;
+  border-radius: var(--border-radius);
+  margin: calc(-1.5 * var(--spacing-xxl)) calc(5 * var(--spacing-xxl))
+    calc(-1.7 * var(--spacing-xxl)) calc(-0.5 * var(--spacing-xxl)); /* top/bottom/left/right */
   text-align: center;
 }
 
 .about-text h2 {
   font-size: var(--h2);
   margin-bottom: var(--spacing-xl);
-  margin-left: var(--spacing-xxl);
+  margin-left: calc(1.7 * var(--spacing-xxl));
   color: var(--text-color);
   font-weight: 300;
 }
@@ -428,18 +427,19 @@ nav {
 .about-text p {
   color: var(--text-light);
   margin-bottom: var(--spacing-md);
-  margin-left: var(--spacing-xxl);
+  margin-left: calc(1.7 * var(--spacing-xxl));
   line-height: 1.8;
 }
 
 .odkaz {
   color: var(--primary-color);
-  margin-left: var(--spacing-xxl);
+  margin-left: calc(1.7 * var(--spacing-xxl));
 }
 
 /* Services Section */
 .services-section {
   padding: var(--spacing-xxxl) 0;
+  border-color: #666;
 }
 
 .services-section h2 {
@@ -513,6 +513,7 @@ nav {
 }
 .form-group input {
   padding: 12px;
+  font-size: medium;
 }
 
 .form-group textarea {
@@ -523,6 +524,8 @@ nav {
   transition: border-color-light var(--transition);
   height: 200px;
   resize: vertical;
+  font-family: inter;
+  font-size: medium;
 }
 
 .contact-info h2 {
